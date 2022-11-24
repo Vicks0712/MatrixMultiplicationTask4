@@ -25,8 +25,7 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 public class DenseBenchMark {
     private static final int SIZE = 1024;
-    private static final Random random = new Random();
-/*
+
     @Benchmark
     public void standardMatrixMultiplication() {
         executeWith(new StandardMatrixMultiplication());
@@ -66,7 +65,7 @@ public class DenseBenchMark {
 
     @Benchmark
     public void singleSemaphoresMultiplication() {executeWith(new ParallelSemaphoreDenseMatrixMultiplication());
-    }*/
+    }
 
     @Benchmark
     public void atomicMultiplication() {executeWith(new AtomicDenseMatrixMultiplication());
